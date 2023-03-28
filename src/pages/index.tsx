@@ -1,12 +1,10 @@
-import Link from 'next/link';
-import style from 'Home.module.css';
+import TreeList from '../components/tree'
 
 export default function Home() {
   return (
     <div>
-      <Link href='/tree'>
-        <h1 className=''>Home</h1>
-      </Link>
+      <h1 className=''>Home</h1>
+      <TreeList></TreeList>
     </div>
   );
 }
