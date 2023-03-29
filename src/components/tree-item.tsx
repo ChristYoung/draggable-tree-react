@@ -3,14 +3,15 @@ import styles from  '../styles/TreeItem.module.css'
 
 
 export const TreeItem: React.FC<NodeItem> = (props) => {
-    const { name } = props;
-    return (
-        <>
+    const { name, children } = props;
+    const mainleaf = <>
         <div className={styles.tree_line}>
-            <span className="arrow"></span>
-            <span>{name}</span>
-            <span className="icon human_icon" ></span>
+            <span className={styles.leaf_name}>{name}</span>
         </div>
-        </>
+    </>
+    // const hasChild = (children as NodeItem[])?.length > 0 ?
+    //     ;
+    return (
+        mainleaf
     );
 }
