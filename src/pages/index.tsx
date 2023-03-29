@@ -1,14 +1,22 @@
 import { TreeList } from '@/components/tree';
 import { MockData } from '@/mock';
 import { NodeItem } from '@/types';
-// import styles from 'Home.module.css'
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const eles = MockData as NodeItem[];
+  const nodes = MockData as NodeItem[];
   return (
-    <div>
-      <h1 className=''>Home</h1>
-      <TreeList nodes={eles}></TreeList>
+    <div className={styles.main}>
+      <div className={styles.leftSide}>
+        <TreeList nodes={nodes}></TreeList>
+      </div>
+      <div className={styles.right_side}>
+        <div className={styles.card_container}>
+            <div className='seg_wrapper'>
+
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
