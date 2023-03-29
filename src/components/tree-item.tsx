@@ -1,5 +1,6 @@
 import { NodeItem } from '@/types';
-import styles from '@/styles/Home.module.css'
+import styles from  '../styles/TreeItem.module.css'
+
 
 export const TreeItem: React.FC<NodeItem> = (props) => {
     const { name, ...res } = props;

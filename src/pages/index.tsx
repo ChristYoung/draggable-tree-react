@@ -1,7 +1,7 @@
 import { TreeList } from '@/components/tree';
 import { MockData } from '@/mock';
 import { NodeItem } from '@/types';
-import styles from '@/styles/Home.module.css'
+// import styles from 'Home.module.css'
 
 export default function Home() {
   const eles = MockData as NodeItem[];
