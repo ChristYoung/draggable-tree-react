@@ -3,7 +3,7 @@ import styles from  '../styles/TreeItem.module.css'
 
 
 export const TreeItem: React.FC<NodeItem> = (props) => {
-    const { name, ...res } = props;
+    const { name } = props;
     return (
         <>
         <div className={styles.tree_line}>
