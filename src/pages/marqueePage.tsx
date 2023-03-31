@@ -1,9 +1,16 @@
 import { Marquee } from '@/components/marquee';
+import styles from '../styles/marqueePage.module.css'
 
 export default function MarqueePage() {
     return (
         <>
-            <Marquee>千万人康师傅就不会时代峰峻</Marquee>
+            <Marquee>
+                <div className={styles.list}>
+                    {Array(10).fill(1).map((item, index) => 
+                        <div key={index} className={styles.item}>{item}</div>
+                    )}
+                </div>
+            </Marquee>
         </>
     )
 }
