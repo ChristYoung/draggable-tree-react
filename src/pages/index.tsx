@@ -1,22 +1,19 @@
-import { TreeList } from '@/components/tree';
 import { MockData } from '@/mock';
 import { NodeItem } from '@/types';
-import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
-  const nodes = MockData as NodeItem[];
   return (
-    <div className={styles.main}>
-      <div className={styles.leftSide}>
-        <TreeList nodes={nodes}></TreeList>
-      </div>
-      <div className={styles.right_side}>
-        <div className={styles.card_container}>
-            <div className='seg_wrapper'>
-
-            </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <h5>React组件学习</h5>
+      <ul>
+        <li>
+          <Link href="/treePage">递归树形组件</Link>
+        </li>
+        <li>
+          <Link href="/marqueePage">跑马灯组件</Link>
+        </li>
+      </ul>
+    </>
   );
 }
