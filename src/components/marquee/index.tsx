@@ -19,6 +19,14 @@ export const Marquee: React.FC<Props> = (props: Props) => {
        <div className={classNames(styles.marquee, className)} {...restProps}>
          <div className={styles.content} style={contentStyles}>{children}</div>
          <div className={styles.content} style={contentStyles}>{children}</div>
+         <div className={classNames(
+          styles.overlay,
+          styles.leftOverLay,
+         )}></div>
+         <div className={classNames(
+          styles.overlay,
+          styles.rightOverLay,
+         )}></div>
        </div>
     )
 }
