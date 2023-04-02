@@ -31,3 +31,7 @@
 .marquee .rightOverLay {
     right: 0;
 }
+
+.pauseOnHover:hover .content {
+    animation-play-state: paused;
+}
