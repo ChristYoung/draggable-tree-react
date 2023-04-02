@@ -26,7 +26,7 @@ export const Marquee: React.FC<Props> = (props: Props) => {
         console.log('contentRef.current.getBoundingClientRect().width',contentRef.current.getBoundingClientRect().width)
         setContentWidth(contentRef.current.getBoundingClientRect().width)
       }
-    })
+    }, [])
 
     const duration  = contentWidth / speed;
 
