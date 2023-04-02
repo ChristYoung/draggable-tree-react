@@ -5,11 +5,14 @@ import classNames from 'classnames';
 interface Props extends HTMLAttributes<HTMLDivElement> {
   animationDelay?: CSSProperties['animationDelay'];
   direction?: 'left' | 'right';
+  grandientColor?: string;
+  grandientWidth?: CSSProperties['width']
 }
 
 export const Marquee: React.FC<Props> = (props: Props) => {
     const {
       direction = 'left',
+      grandientColor, grandientWidth,
       animationDelay, children, className, ...restProps } = props;
     const contentStyles: CSSProperties = {
       animationDelay,
@@ -22,11 +25,12 @@ export const Marquee: React.FC<Props> = (props: Props) => {
          <div className={classNames(
           styles.overlay,
           styles.leftOverLay,
-         )}></div>
+         )} style={{ background: `linear-gradient(90deg, ${grandientColor} 0%, rgba(255, 255, 255, 0) 100%);`, width: grandientWidth }}
+         ></div>
          <div className={classNames(
           styles.overlay,
           styles.rightOverLay,
-         )}></div>
+         )} style={{ background: `linear-gradient(270deg, ${grandientColor} 0%, rgba(255, 255, 255, 0) 100%);`, width: grandientWidth }}></div>
        </div>
     )
 }

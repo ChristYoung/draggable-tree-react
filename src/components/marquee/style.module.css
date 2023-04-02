@@ -26,12 +26,8 @@
 
 .marquee .leftOverLay {
     left: 0;
-    width: 200px;
-    background: linear-gradient(90deg, #F8FBFD 0%, rgba(255, 255, 255, 0) 100%);;
 }
 
 .marquee .rightOverLay {
     right: 0;
-    width: 200px;
-    background: linear-gradient(270deg, #F8FBFD 0%, rgba(255, 255, 255, 0) 100%);;
 }
