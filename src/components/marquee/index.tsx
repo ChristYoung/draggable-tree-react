@@ -23,6 +23,7 @@ export const Marquee: React.FC<Props> = (props: Props) => {
     const contentRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
       if (contentRef.current) {
+        console.log('contentRef.current.getBoundingClientRect().width',contentRef.current.getBoundingClientRect().width)
         setContentWidth(contentRef.current.getBoundingClientRect().width)
       }
     })
@@ -37,7 +38,7 @@ export const Marquee: React.FC<Props> = (props: Props) => {
 
     return (
        <div className={classNames(styles.marquee, className, { [styles.pauseOnHover]: pauseOnHover})} {...restProps}>
-         <div className={styles.content} style={contentStyles}>{children}</div>
+         <div ref={contentRef}  className={styles.content} style={contentStyles}>{children}</div>
          <div className={styles.content} style={contentStyles}>{children}</div>
          
          {
