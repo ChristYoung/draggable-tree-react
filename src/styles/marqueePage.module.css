@@ -1,3 +1,7 @@
+.marquee {
+    width: 80%;
+}
+
 .list {
     display: flex;
     background-color: aliceblue;

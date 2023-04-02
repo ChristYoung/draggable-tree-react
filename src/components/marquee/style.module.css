@@ -10,8 +10,10 @@
 
 .marquee {
     display: flex;
-    width: 100px;
     overflow: hidden;
 }
 
-.marquee .content { animation: marquee 5s infinite linear; white-space: nowrap; }
+.marquee .content {
+    animation: marquee 5s infinite linear;
+    white-space: nowrap;
+}
