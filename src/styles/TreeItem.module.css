@@ -4,6 +4,7 @@
      border-bottom: 1px solid #d8d2d2;
      padding: 10px 0;
      cursor: pointer;
+     user-select: none;
  }
 
  .tree_line span {

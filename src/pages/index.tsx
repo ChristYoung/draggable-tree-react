@@ -1,8 +1,13 @@
-import { MockData } from '@/mock';
-import { NodeItem } from '@/types';
+import { message } from 'antd';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+  const [date, setDate] = useState(null);
+  const handleChange = (value) => {
+    message.info(`您选择的日期是: ${value ? value.format('YYYY年MM月DD日') : '未选择'}`);
+    setDate(value);
+  };
   return (
     <>
       <h5>React组件学习</h5>

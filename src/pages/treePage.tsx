@@ -1,7 +1,9 @@
 import { TreeList } from '@/components/tree';
 import { MockData } from '@/mock';
 import { NodeItem } from '@/types';
+import { ConfigProvider, DatePicker, message } from 'antd';
 import styles from '../styles/Home.module.css';
+import 'antd/dist/reset.css';
 
 export default function TreePage() {
     const nodes = MockData as NodeItem[];
