@@ -1,9 +1,12 @@
-export const MockData = [
+import { NodeItem } from '@/types';
+
+export const MockData: NodeItem[] = [
     {
         "id": "440000198009118872",
         "name": "My Data",
         "type": "DIR",
         "level": 0,
+        "expanded": true,
         "children": [
             {
                 "id": "210000202107071541",

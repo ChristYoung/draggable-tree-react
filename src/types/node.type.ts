@@ -2,7 +2,7 @@ export interface NodeItem {
     id: string;
     name: string;
     level: number;
-    children: NodeItem[];
+    children?: NodeItem[];
     type: 'FILE' | 'DIR';
     path?: string;
     expanded?: boolean; // only use for FE.
